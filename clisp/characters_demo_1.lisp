@@ -1,0 +1,7 @@
+(write 'a)
+(terpri)
+(write #\a)
+(terpri)
+(write-char #\a)
+(terpri)
+(write-char 'a)
