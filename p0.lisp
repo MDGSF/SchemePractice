@@ -81,11 +81,15 @@
 
 
 ; 5. cdr
-; @brief: (cdr x) 返回列表 x 第一个元素之后的所有元素。
+; @brief: (cdr x) 返回列表 x 第一个元素之后的所有元素组成的列表。
 ;         x 的值必须是一个列表
+;         注意：car 返回的是元素，而 cdr 返回的是列表
 ; @example:
 ; > (cdr '(a b c))
 ; (B C)
+; @example 2: 可以看到，即使只要一个剩余元素，也是作为列表返回的。
+; > (cdr '(a b))
+; (B)
 
 
 ; 6. cons
@@ -129,6 +133,4 @@
 ; > (cond ((atom '(a b)) 'first)
 ;         ('t 'else))
 ; ELSE
-
-
 
