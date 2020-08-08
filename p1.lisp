@@ -38,12 +38,18 @@
   (car (car x)))
 (defun cadr. (x)
   (car (cdr x)))
+(defun caaar. (x)
+  (car (car (car x))))
+(defun caadr. (x)
+  (car (car (cdr x))))
 (defun cadar. (x)
   (car (cdr (car x))))
 (defun caddr. (x)
   (car (cdr (cdr x))))
 (defun cdar. (x)
   (cdr (car x)))
+(defun cddr. (x)
+  (cdr (cdr x)))
 
 
 ; list
