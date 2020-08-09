@@ -1,0 +1,5 @@
+(write (cadadr '(a (c d) (e f g))))
+(terpri)
+(write (caar (list (list 'a 'b) 'c)))
+(terpri)
+(write (cadr (list (list 1 2) (list 3 4))))

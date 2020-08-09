@@ -44,6 +44,28 @@
 ; @example 3: 这个例子中的 '(atom 'a) 表示的是一个表，这个表里面有两个元素。
 ; > (atom '(atom 'a))
 ; NIL
+;
+; @example 4:
+; > (atom 'a)
+; T
+; > (atom (quote a))
+; T
+; > (atom '(quote a))
+; NIL
+
+; @example 5:
+; > (car '('a 'b 'c))
+; 'A
+; > (car '(a b c))
+; A
+; > (atom (car '('a 'b 'c)))
+; NIL
+; > (atom (car '(a b c)))
+; T
+; > (atom 'a)
+; T
+; > (atom a)
+; *** - SYSTEM::READ-EVAL-PRINT: variable A has no value
 
 
 ; 3. eq

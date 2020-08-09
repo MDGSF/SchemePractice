@@ -31,38 +31,47 @@
         ('t (cons (eval. (car m) a)
                   (evlis. (cdr m) a)))))
 
+
+; A
 (write (eval. 'x '((x a) (y b))))
-
 (terpri)
+
+; T
 (write (eval. '(eq 'a 'a) '()))
-
 (terpri)
+
+; (A B C)
 (write (eval. '(cons x '(b c))
               '((x a) (y b))))
-
 (terpri)
+
+; LIST
 (write (eval. '(cond ((atom x) 'atom)
                      ('t 'list))
               '((x '(a b)))))
-
 (terpri)
+
+; (A B C)
 (write (eval. '(f '(b c))
               '((f (lambda (x) (cons 'a x))))))
-
 (terpri)
+
+; A
 (write (eval. '((label firstatom (lambda (x)
                                    (cond ((atom x) x)
                                          ('t (firstatom (car x))))))
                 y)
               '((y ((a b) (c d))))))
-
 (terpri)
+
+; (A C D)
 (write (eval. '((lambda (x y) (cons x (cdr y)))
                 'a
                 '(b c d))
               '()))
-
 (terpri)
+
+; (A C D)
 (write (eval. '(cons x (cdr y))
               '((x a) (y (b c d)))))
 

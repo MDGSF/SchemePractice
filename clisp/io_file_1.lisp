@@ -1,0 +1,6 @@
+(with-open-file (stream "/tmp/myfile.txt" :direction :output)
+  (format stream "Welcome to lisp")
+  (terpri stream)
+  (format stream "This is a beautiful day")
+  (terpri stream)
+  (format stream "I Love Lisp"))
