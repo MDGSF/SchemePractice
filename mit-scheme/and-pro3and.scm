@@ -1,0 +1,5 @@
+(define (pro3and a b c)
+  (and (positive? a)
+	   (positive? b)
+	   (positive? c)
+	   (* a b c)))

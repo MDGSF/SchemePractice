@@ -1,0 +1,5 @@
+(define (pro3or a b c)
+  (if (or (negative? a)
+		  (negative? b)
+		  (negative? c))
+	(* a b c)))

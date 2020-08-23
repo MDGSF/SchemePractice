@@ -1,0 +1,6 @@
+(reduce + 0 '(1 2 3 4))
+(reduce + 0 '(1 2))
+(reduce + 0 '(1))
+(reduce + 0 '())
+(reduce + 0 '(f00))
+(reduce list '() '(1 2 3 4))
